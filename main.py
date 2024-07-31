@@ -61,7 +61,7 @@ while True:
             pressure_data = read_pressure.read()
 
             if int(data_json[0]['online_status']) == 1:
-                print("อัพโหลดไฟล์ แบบ online")
+                print("Mode online")
                 # plc out 
                 resp = requests.post(url_data_logger, data={'ph':ph_data,
                                                             'orp':orp_data,
